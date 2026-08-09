@@ -1,0 +1,516 @@
+/* ===========================================
+        GLOBAL TRANSITION
+=========================================== */
+
+*{
+
+    transition:
+        background .35s ease,
+        color .35s ease,
+        border-color .35s ease,
+        transform .35s ease,
+        opacity .35s ease;
+
+}
+
+/* ===========================================
+        FADE
+=========================================== */
+
+.fade-up{
+
+    animation:fadeUp 1s ease forwards;
+
+}
+
+.fade-down{
+
+    animation:fadeDown 1s ease forwards;
+
+}
+
+.fade-left{
+
+    animation:fadeLeft 1s ease forwards;
+
+}
+
+.fade-right{
+
+    animation:fadeRight 1s ease forwards;
+
+}
+
+.zoom-in{
+
+    animation:zoomIn 1s ease forwards;
+
+}
+
+.zoom-out{
+
+    animation:zoomOut 1s ease forwards;
+
+}
+
+/* ===========================================
+            HERO
+=========================================== */
+
+.hero-content p{
+
+    animation:fadeDown 1s ease;
+
+}
+
+.hero-content h1{
+
+    animation:zoomIn 1.2s ease;
+
+}
+
+.hero-content span{
+
+    animation:pulse 2s infinite;
+
+}
+
+#countdown{
+
+    animation:fadeUp 1.8s ease;
+
+}
+
+/* ===========================================
+        OPENING
+=========================================== */
+
+.opening-content{
+
+    animation:zoomIn .8s ease;
+
+}
+
+#openInvitation{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+#openInvitation::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.3);
+
+    transform:skewX(-25deg);
+
+}
+
+#openInvitation:hover::before{
+
+    left:120%;
+
+    transition:1s;
+
+}
+
+/* ===========================================
+        HEART
+=========================================== */
+
+.heart{
+
+    animation:heartbeat 1.5s infinite;
+
+}
+
+/* ===========================================
+        PERSON
+=========================================== */
+
+.person:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.person img{
+
+    transition:.5s;
+
+}
+
+/* ===========================================
+        TIMELINE
+=========================================== */
+
+.timeline-item{
+
+    opacity:0;
+
+    animation:fadeUp 1s forwards;
+
+}
+
+.timeline-item:nth-child(1){
+
+    animation-delay:.2s;
+
+}
+
+.timeline-item:nth-child(2){
+
+    animation-delay:.4s;
+
+}
+
+.timeline-item:nth-child(3){
+
+    animation-delay:.6s;
+
+}
+
+.timeline-item:nth-child(4){
+
+    animation-delay:.8s;
+
+}
+
+/* ===========================================
+        CARD
+=========================================== */
+
+.card{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:100%;
+
+    left:0;
+
+    top:0;
+
+    background:rgba(212,175,55,.08);
+
+    transition:.5s;
+
+}
+
+.card:hover::before{
+
+    width:100%;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ===========================================
+        GALLERY
+=========================================== */
+
+.gallery-grid img{
+
+    transition:.5s;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.08);
+
+    filter:brightness(.8);
+
+}
+
+/* ===========================================
+        BUTTON
+=========================================== */
+
+button:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================================
+        MUSIC
+=========================================== */
+
+.music-button.playing{
+
+    animation:rotateDisc 5s linear infinite;
+
+}
+
+/* ===========================================
+        FLOATING
+=========================================== */
+
+.float{
+
+    animation:floating 3s ease infinite;
+
+}
+
+/* ===========================================
+        GLOW
+=========================================== */
+
+.glow{
+
+    box-shadow:
+
+    0 0 10px rgba(212,175,55,.4),
+
+    0 0 20px rgba(212,175,55,.3),
+
+    0 0 40px rgba(212,175,55,.2);
+
+}
+
+/* ===========================================
+        KEYFRAMES
+=========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        transform:scale(.8);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes zoomOut{
+
+    from{
+
+        transform:scale(1.2);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes heartbeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    25%{
+
+        transform:scale(1.15);
+
+    }
+
+    50%{
+
+        transform:scale(.9);
+
+    }
+
+    75%{
+
+        transform:scale(1.1);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.1);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes rotateDisc{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}

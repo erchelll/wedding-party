@@ -1,0 +1,397 @@
+/* ==========================================
+        LARGE DEVICE
+==========================================*/
+
+@media(max-width:1200px){
+
+    section{
+
+        padding:90px 6%;
+
+    }
+
+    .hero-content h1{
+
+        font-size:75px;
+
+    }
+
+    .section-title h2{
+
+        font-size:50px;
+
+    }
+
+}
+
+/* ==========================================
+        TABLET
+==========================================*/
+
+@media(max-width:992px){
+
+    .hero-content h1{
+
+        font-size:65px;
+
+    }
+
+    .hero-content span{
+
+        font-size:35px;
+
+    }
+
+    .couple-wrapper{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+    }
+
+    .heart{
+
+        display:none;
+
+    }
+
+    .event-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .timeline::before{
+
+        left:20px;
+
+    }
+
+    .timeline-item{
+
+        width:100%;
+
+        left:0!important;
+
+        padding-left:60px;
+
+        padding-right:0;
+
+    }
+
+    .timeline-item::after{
+
+        left:11px!important;
+
+        right:auto;
+
+    }
+
+}
+
+/* ==========================================
+            MOBILE
+==========================================*/
+
+@media(max-width:768px){
+
+    section{
+
+        padding:70px 25px;
+
+    }
+
+    .opening-content h1{
+
+        font-size:55px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:55px;
+
+    }
+
+    .hero-content span{
+
+        font-size:28px;
+
+    }
+
+    .section-title h2{
+
+        font-size:40px;
+
+    }
+
+    #countdown{
+
+        gap:15px;
+
+    }
+
+    #countdown div{
+
+        width:90px;
+
+        height:90px;
+
+    }
+
+    #countdown h2{
+
+        font-size:30px;
+
+    }
+
+    .person{
+
+        padding:30px;
+
+    }
+
+    .person img{
+
+        width:200px;
+
+        height:200px;
+
+    }
+
+    .person h2{
+
+        font-size:34px;
+
+    }
+
+    .timeline-item{
+
+        padding-left:50px;
+
+    }
+
+    .card{
+
+        padding:35px;
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-grid img{
+
+        height:260px;
+
+    }
+
+    .rekening{
+
+        width:100%;
+
+    }
+
+    .video video{
+
+        border-radius:15px;
+
+    }
+
+    .maps iframe{
+
+        height:350px;
+
+    }
+
+    footer h2{
+
+        font-size:40px;
+
+    }
+
+}
+
+/* ==========================================
+        SMALL MOBILE
+==========================================*/
+
+@media(max-width:576px){
+
+    .opening-content{
+
+        padding:20px;
+
+    }
+
+    .opening-content h1{
+
+        font-size:42px;
+
+    }
+
+    .opening-content h2{
+
+        font-size:22px;
+
+    }
+
+    #openInvitation{
+
+        width:100%;
+
+    }
+
+    .hero-content h1{
+
+        font-size:45px;
+
+    }
+
+    .hero-content p{
+
+        font-size:14px;
+
+    }
+
+    .section-title h2{
+
+        font-size:34px;
+
+    }
+
+    .quote h2{
+
+        font-size:28px;
+
+    }
+
+    .person img{
+
+        width:170px;
+
+        height:170px;
+
+    }
+
+    .person h2{
+
+        font-size:30px;
+
+    }
+
+    .card h2{
+
+        font-size:24px;
+
+    }
+
+    .gallery-grid img{
+
+        height:220px;
+
+    }
+
+    .rsvp form{
+
+        padding:25px;
+
+    }
+
+    footer{
+
+        padding:60px 20px;
+
+    }
+
+}
+
+/* ==========================================
+        EXTRA SMALL
+==========================================*/
+
+@media(max-width:400px){
+
+    .hero-content h1{
+
+        font-size:38px;
+
+    }
+
+    .opening-content h1{
+
+        font-size:36px;
+
+    }
+
+    #countdown{
+
+        gap:10px;
+
+    }
+
+    #countdown div{
+
+        width:75px;
+
+        height:75px;
+
+    }
+
+    #countdown h2{
+
+        font-size:24px;
+
+    }
+
+    .person{
+
+        padding:20px;
+
+    }
+
+    .card{
+
+        padding:25px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+    width:95%;
+
+    justify-content:space-around;
+
+    padding:12px;
+
+}
+
+.navbar span{
+
+    display:none;
+
+}
+
+.navbar i{
+
+    margin:0;
+
+    font-size:18px;
+
+}
+
+}
