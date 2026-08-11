@@ -265,30 +265,30 @@ OPENING
 
 }
 
-.opening-content p{
+.opening {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
 
-    color:var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    letter-spacing:4px;
-
-    margin-bottom:15px;
-
+    background: #000000;
 }
 
-.opening-content h1{
-
-    font-size:80px;
-
-    font-family:'Cormorant Garamond',serif;
-
-    margin-bottom:15px;
-
+.opening-content h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px;
+    font-weight: 400;
+    color: #FFD700;
+    line-height: 1.1;
+    margin-bottom: 15px;
 }
 
-.opening-content h1 span{
-
-    color:var(--primary);
-
+.opening-content h1 span {
+    font-family: 'Great Vibes', cursive;
+    color: #FFD700;
 }
 
 .opening-content h3{
@@ -385,26 +385,19 @@ HERO
 
 }
 
-.hero-content h1{
-
-    font-size:90px;
-
-    font-family:'Cormorant Garamond',serif;
-
-    line-height:1;
-
+.hero-content h1 {
+    font-size: 85px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #7A4058;
 }
 
-.hero-content span{
-
-    display:block;
-
-    font-size:45px;
-
-    margin:20px 0;
-
-    color:var(--primary);
-
+.hero-content span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+    font-weight: 400;
+    color: #C96F91;
 }
 
 /*==================================================
@@ -467,12 +460,10 @@ COUNTDOWN
 
 }
 
-#countdown span{
-
-    margin-top:5px;
-
-    font-size:14px;
-
+#countdown div span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 /*==================================================
@@ -603,29 +594,38 @@ QUOTE
 
 }
 
-.heart{
+@media (max-width: 768px) {
 
-    width:100px;
+    .couple-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
-    height:100px;
+    /* Adit tetap di atas */
+    .couple-wrapper .person:first-child {
+        order: 1;
+    }
 
-    display:flex;
+    /* Love dipindahkan sebelum Rindi */
+    .couple-wrapper .heart {
+        width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #000;
+    font-size: 35px;
+    animation: heartbeat 1.5s infinite;
+    }
 
-    justify-content:center;
-
-    align-items:center;
-
-    margin:auto;
-
-    border-radius:50%;
-
-    background:var(--primary);
-
-    color:#000;
-
-    font-size:35px;
-
-    animation:heartbeat 1.5s infinite;
+    /* Rindi di bawah love */
+    .couple-wrapper .person:last-child {
+        order: 3;
+    }
 
 }
 

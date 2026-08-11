@@ -30,17 +30,19 @@
 
 @media(max-width:992px){
 
-    .hero-content h1{
+   .hero-content h1 {
+    font-family: 'Grat vibes', serif;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #ffffff;
+}
 
-        font-size:65px;
-
-    }
-
-    .hero-content span{
-
-        font-size:35px;
-
-    }
+    .hero-content span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    color: #ffffff;
+}
 
     .couple-wrapper{
 
