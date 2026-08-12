@@ -22,7 +22,7 @@
         href="https://fonts.gstatic.com"
         crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    <<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap"
     rel="stylesheet">
 
     <!-- Icons -->
@@ -539,31 +539,81 @@ src="assets/images/ornaments/RIGHT-removebg-preview.png">
 
         </div>
 
-        <form>
+        <form
+  action="https://formspree.io/f/mvkprzqb"
+  method="POST"
+  class="rsvp-form"
+>
+  <!-- Nama Tamu -->
+  <div class="form-group">
+    <label for="name">Nama</label>
+    <input
+      type="text"
+      id="name"
+      name="nama"
+      placeholder="Masukkan nama Anda"
+      required
+    >
+  </div>
 
-            <input type="text"
-                placeholder="Nama">
+  <!-- Konfirmasi Kehadiran -->
+  <div class="form-group">
+    <label for="attendance">Konfirmasi Kehadiran</label>
+    <select
+      id="attendance"
+      name="kehadiran"
+      required
+    >
+      <option value="" disabled selected>
+        Pilih konfirmasi
+      </option>
+      <option value="Hadir">
+        Ya, saya akan hadir
+      </option>
+      <option value="Tidak Hadir">
+        Maaf, saya tidak dapat hadir
+      </option>
+    </select>
+  </div>
 
-            <select>
+  <!-- Jumlah Tamu -->
+  <div class="form-group">
+    <label for="guests">Jumlah Tamu</label>
+    <select
+      id="guests"
+      name="jumlah_tamu"
+      required
+    >
+      <option value="" disabled selected>
+        Pilih jumlah tamu
+      </option>
+      <option value="1">1 Orang</option>
+      <option value="2">2 Orang</option>
+    </select>
+  </div>
 
-                <option>Hadir</option>
+  <!-- Ucapan -->
+  <div class="form-group">
+    <label for="message">Ucapan & Doa</label>
+    <textarea
+      id="message"
+      name="ucapan"
+      rows="4"
+      placeholder="Tuliskan ucapan dan doa untuk Adit & Rindi..."
+    ></textarea>
+  </div>
 
-                <option>Tidak Hadir</option>
+  <!-- Subject untuk email -->
+  <input
+    type="hidden"
+    name="_subject"
+    value="RSVP Wedding Adit & Rindi"
+  >
 
-            </select>
-
-            <textarea
-                placeholder="Ucapan"></textarea>
-
-            <button type="submit">
-
-                Kirim
-
-            </button>
-
-        </form>
-
-    </section>
+  <button type="submit" class="rsvp-button">
+    Kirim RSVP
+  </button>
+</form>
 
     <!-- =========================
             FOOTER

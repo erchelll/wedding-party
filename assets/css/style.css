@@ -1963,3 +1963,82 @@ footer h3{
     animation:floating 5s infinite reverse;
 
 }
+
+/* =========================
+   MOBILE - SAMAKAN DENGAN LAPTOP
+========================= */
+@media (max-width: 768px) {
+
+    /* Nama Adit & Rindi */
+    .hero h1,
+    .hero h1 span,
+    .couple-name,
+    .names {
+        font-family: 'Great Vibes', cursive !important;
+    }
+
+    /* Countdown */
+    .countdown-item h3,
+    .countdown-item h2,
+    .countdown-item span,
+    .countdown-item p {
+        font-family: 'Cormorant Garamond', serif !important;
+    }
+}
+
+/* RSVP FORM */
+.rsvp-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #d88ca0;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.rsvp-button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 25px;
+  background: var(--primary);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rsvp-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
