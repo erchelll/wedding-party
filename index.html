@@ -40,6 +40,8 @@
     <link rel="stylesheet"
         href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
+    <link rel="stylesheet" href="assets/css/wedding-effects.css">
+
     <!-- CSS -->
 
     <link rel="stylesheet"
@@ -110,46 +112,64 @@
             OPENING
     ========================== -->
 
-    <section class="opening"
-        id="opening">
+    
+<section class="opening" id="opening">
+    <div class="overlay"></div>
 
-        <div class="overlay"></div>
+    <div class="opening-content">
 
-        <div class="opening-content">
+        <p class="opening-kicker">THE WEDDING OF</p>
 
-            <p>The Wedding Of</p>
+        <h1 class="opening-title">
+            Adit <span>&</span> Rindi
+        </h1>
 
-            <h1>Adit <span>&</span> Rindi</h1>
+        <p class="opening-subtitle">Kepada Yth.</p>
 
-            <h3>Kepada Bapak/Ibu/Saudara/i</h3>
+        <h2 id="guest-name">Tamu Undangan</h2>
 
-            <h2 id="guest-name">
-                Tamu Undangan
-            </h2>
+        <!-- AMPL0P 3D -->
+        <div class="envelope-scene">
 
-            <button id="openInvitation">
+            <div class="envelope-shadow"></div>
 
-                <i class="fa-solid fa-envelope-open"></i>
+            <div class="wedding-envelope">
 
-                Buka Undangan
+                <div class="envelope-back"></div>
 
-            </button>
+                <div class="envelope-letter">
+                    <span>THE WEDDING OF</span>
 
+                    <strong>
+                        Adit <i>&</i> Rindi
+                    </strong>
+
+                    <small>20 • 12 • 2026</small>
+                </div>
+
+                <div class="envelope-flap"></div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-seal">♥</div>
+
+            </div>
         </div>
 
-    </section>
+        <button id="openInvitation" type="button">
+            <i class="fa-solid fa-envelope-open"></i>
+            Buka Undangan
+        </button>
 
-    <!-- =========================
-            HERO
-    ========================== -->
+        <p class="opening-hint">
+            Sentuh tombol untuk membuka undangan
+        </p>
 
-    <img
-class="flower-left"
-src="assets/images/ornaments/LEFT-removebg-preview.png">
+    </div>
+</section>
 
-<img
-class="flower-right"
-src="assets/images/ornaments/RIGHT-removebg-preview.png">
+
+   
 
     <header class="hero"
         id="home">
@@ -659,6 +679,7 @@ src="assets/images/ornaments/RIGHT-removebg-preview.png">
 
     <script src="assets/js/main.js"></script>
 
+    <script src="assets/js/wedding-effects.js"></script>
 </body>
 
 </html>
